@@ -49,7 +49,9 @@ function findEmployeeByFirstName(records,fname) {
     return records.find(rec => rec.firstName === fname);
 }
 
-
+function calculatePayroll(records) {
+  return records.reduce((total,current) => total + allWagesFor(current),0);
+}
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
