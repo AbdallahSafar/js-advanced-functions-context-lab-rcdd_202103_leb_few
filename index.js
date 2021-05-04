@@ -26,6 +26,15 @@ function createTimeInEvent(date) {
   return this
 }
 
+function createTimeOutEvent(date) {
+  this.timeInEvents.push({
+    type: "TimeIn",
+    hour: parseInt(date.split(' ')[1]),
+    date: date.split(' ')[0]
+  });
+  return this;
+}
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
