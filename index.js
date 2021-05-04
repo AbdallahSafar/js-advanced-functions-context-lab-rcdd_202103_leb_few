@@ -23,7 +23,7 @@ function createTimeInEvent(date) {
     hour: parseInt(date.split(' ')[1]),
     date: date.split(' ')[0]
   });
-  return emp;
+  return this
 }
 
 /*
