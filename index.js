@@ -16,6 +16,16 @@ function createEmployeeRecords(arr) {
     return createEmployeeRecord(el);
   })
 }
+
+function createTimeInEvent(emp,date) {
+  emp.timeInEvents.push({
+    type: "TimeIn",
+    hour: parseInt(date.split(' ')[1]),
+    date: date.split(' ')[0]
+  });
+  return emp;
+}
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
