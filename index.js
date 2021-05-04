@@ -45,6 +45,12 @@ function wagesEarnedOnDate(date) {
   return hoursWorkedOnDate.call(this,date) * rec.payPerHour;
 }
 
+function findEmployeeByFirstName(records,fname) {
+    return records.find(rec => rec.firstName === fname);
+}
+
+
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
