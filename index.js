@@ -42,7 +42,7 @@ function hoursWorkedOnDate(date) {
 }
 
 function wagesEarnedOnDate(date) {
-  return hoursWorkedOnDate.call(this,date) * rec.payPerHour;
+  return hoursWorkedOnDate.call(this,date) * this.payPerHour;
 }
 
 function findEmployeeByFirstName(records,fname) {
