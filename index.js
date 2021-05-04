@@ -50,7 +50,7 @@ function findEmployeeByFirstName(records,fname) {
 }
 
 function calculatePayroll(records) {
-  return records.reduce((total,current) => total + allWagesFor(current),0);
+  return records.reduce((total,current) => total + allWagesFor.call(this),0);
 }
 
 /*
